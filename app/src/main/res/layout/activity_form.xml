@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FormActivity">
+
+    <!-- Nome INICIO-->
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:text="Nome:" />
+
+    <EditText
+        android:id="@+id/nameEdit"
+        android:layout_width="match_parent"
+        android:layout_below="@id/nameText"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp" />
+    <!-- Nome FIM-->
+
+    <!-- CPF INICIO-->
+    <TextView
+        android:id="@+id/cpfTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEdit"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:text="CPF:" />
+
+    <EditText
+        android:id="@+id/cpfEdit"
+        android:layout_below="@+id/cpfTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="15dp" />
+    <!-- CPF FIM-->
+
+    <!-- Telefone INICIO -->
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cpfEdit"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:text="Telefone:" />
+
+    <EditText
+        android:id="@+id/phoneEdit"
+        android:layout_below="@+id/phoneTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="phone"/>
+    <!-- Telefone FIM-->
+
+    <!-- email INICIO-->
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phoneEdit"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:text="E-mail:" />
+
+    <EditText
+        android:id="@+id/emailEdit"
+        android:layout_below="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp" />
+    <!-- email FIM-->
+
+    <!-- idade INICIO-->
+    <TextView
+        android:id="@+id/ageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEdit"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="13dp"
+        android:text="Idade:" />
+
+    <EditText
+        android:id="@+id/ageEdit"
+        android:layout_below="@+id/ageTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="15dp"
+        android:inputType="number"/>
+    <!-- idade FIM-->
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:text="Cadastrar"/>
+
+</RelativeLayout>
